@@ -8,7 +8,7 @@
                                                                                  
 </pre>
 
-Website for a school project ^^
+<b>Website for a school project ^^</b>
 <br>
 <br>
 I only got into coding recently, so apologies for the <i>very</i> basic/messy code.
