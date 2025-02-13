@@ -1,7 +1,31 @@
-  ,---.   ,--.                       ,--.   
- /  O  \  |  |-.   ,---.  ,--.,--. ,-'  '-. 
-|  .-.  | | .-. ' | .-. | |  ||  | '-.  .-' 
-|  | |  | | `-' | ' '-' ' '  ''  '   |  |   
-`--' `--'  `---'   `---'   `----'    `--'   
+<pre>
+                                       
+        ,--.                    ,--.   
+ ,--,--.|  |-.  ,---. ,--.,--.,-'  '-. 
+' ,-.  || .-. '| .-. ||  ||  |'-.  .-' 
+\ '-'  || `-' |' '-' ''  ''  '  |  |   
+ `--`--' `---'  `---'  `----'   `--'   
+                                                                                 
+</pre>
 
-Website for a school project!
+Website for a school project ^^
+<br>
+<br>
+I only got into coding recently, so apologies for the <i>very</i> basic/messy code.
+<br>
+<br>
+
+<pre>                                                                            
+                 ,--.                 
+,--,--,  ,---. ,-'  '-. ,---.  ,---.  
+|      \| .-. |'-.  .-'| .-. :(  .-'  
+|  ||  |' '-' '  |  |  \   --..-'  `) 
+`--''--' `---'   `--'   `----'`----'  
+                                    
+</pre>
+<b>Things to do:</b>
+<ul>
+  <li>entry page</li>
+  <li>main page (most of content)</li>
+  <li>secondary page (for resources/links)</li>
+</ul>
