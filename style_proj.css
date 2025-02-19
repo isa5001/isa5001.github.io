@@ -16,7 +16,7 @@ p{
 
 
 body{
-    background-image: url('/background.png');
+    background-attachment: fixed;  
 }
 
 .entry-text{
@@ -48,10 +48,6 @@ body{
     font-family: "Syne_Mono", monospace, Arial;;
     font-size: 50px;
     color: black;
-    filter: drop-shadow(1px 1px 0 black) 
-    drop-shadow(-1px 1px 0 black)
-    drop-shadow(1px -1px 0 black)
-    drop-shadow(-1px -1px 0 black);
   }
 
   .entry-button:hover span, .entry-button:focus span {
