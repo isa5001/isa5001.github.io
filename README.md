@@ -25,6 +25,7 @@ I only got into coding recently, so apologies for the <i>very</i> basic/messy co
 </pre>
 <b>Things to do:</b>
 <ul>
-  <li>entry page</li>
-  <li>main page (most of content)</li>
-  <li>secondary page (for resources/links)</li>
+  <li>fix directory and buttons</li>
+  <li>add css containers for text</li>
+  <li>add backgrounds</li>
+  <li>code html + css for additional images</li>

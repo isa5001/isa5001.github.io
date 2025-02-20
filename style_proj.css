@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: "Syne_Mono";
     src: url(Syne_Mono/SyneMono-Regular.ttf) format("truetype");
@@ -45,9 +49,13 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 99;
-    font-family: "Syne_Mono", monospace, Arial;;
+    font-family: "Syne_Mono", monospace, Arial;
     font-size: 50px;
-    color: black;
+    color: whitesmoke;
+    filter: drop-shadow(1px 1px 0 black) 
+    drop-shadow(-1px 1px 0 rgb(94, 45, 31))
+    drop-shadow(1px -1px 0 rgb(94, 45, 31))
+    drop-shadow(-1px -1px 0 rgb(94, 45, 31));
   }
 
   .entry-button:hover span, .entry-button:focus span {
