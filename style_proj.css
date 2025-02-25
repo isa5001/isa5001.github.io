@@ -7,10 +7,12 @@ html {
     src: url(Syne_Mono/SyneMono-Regular.ttf) format("truetype");
 }
 
-
+/*all text will be in css containers*/
 h1{
     font-family: "Syne_Mono", monospace, Arial;
-	text-align: center;
+    font-size: 40px;
+	text-align: left;
+    padding: 50px;
 }
 
 p{
@@ -81,6 +83,12 @@ body{
 .stamp:hover{
     rotate: 10deg;
     cursor: help;
+}
+
+@media (max-width: 576px) {
+    .navigation {
+      display: none;
+    }
 }
 
 /*FIRST BUTTON*/
