@@ -2,24 +2,44 @@ html {
     scroll-behavior: smooth;
 }
 
+@media (max-width: 576px) {
+    .navigation {
+      display: none;
+    }
+}
+
 @font-face {
     font-family: "Syne_Mono";
     src: url(Syne_Mono/SyneMono-Regular.ttf) format("truetype");
+    font-family: "RubikDirt";
+    src:url(RubikDirt/RubikDirt-Regular.ttf) format("truetype");
+}
+
+a:link {
+    color: #127475;
+    text-decoration: none;
+ }
+ a:visited {
+    color: #F2542D;
+ }
+  a:hover {
+    color: #23aeae;
+    text-decoration: underline;
 }
 
 /*all text will be in css containers*/
 h1{
-    font-family: "Syne_Mono", monospace, Arial;
-    font-size: 40px;
+    font-family: "RubikDirt", monospace, Arial;
+    font-size: 48px;
 	text-align: left;
     padding: 50px;
+    padding-left: 7.5%;
 }
 
 p{
 	font-family: "Syne_Mono", monospace, Arial;
     text-align: center;
 }
-
 
 body{
     background-attachment: fixed;  
@@ -32,6 +52,11 @@ body{
     padding-left: 80px;
 }
 
+li{
+    font-family: "Syne_Mono", monospace, Arial;
+    padding: 20px;
+    list-style-type: square;
+}
 
 /* -------------------------------------altered code snippet from ribo.zone------------------------------------- */
 .entry-button {
@@ -51,13 +76,9 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 99;
-    font-family: "Syne_Mono", monospace, Arial;
-    font-size: 50px;
-    color: whitesmoke;
-    filter: drop-shadow(1px 1px 0 black) 
-    drop-shadow(-1px 1px 0 rgb(94, 45, 31))
-    drop-shadow(1px -1px 0 rgb(94, 45, 31))
-    drop-shadow(-1px -1px 0 rgb(94, 45, 31));
+    font-family: "RubikDirt", monospace, Arial;
+    font-size: 64px;
+    color: rgba(171, 28, 28, 0.8);
   }
 
   .entry-button:hover span, .entry-button:focus span {
@@ -83,12 +104,6 @@ body{
 .stamp:hover{
     rotate: 10deg;
     cursor: help;
-}
-
-@media (max-width: 576px) {
-    .navigation {
-      display: none;
-    }
 }
 
 /*FIRST BUTTON*/
