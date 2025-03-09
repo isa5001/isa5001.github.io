@@ -20,7 +20,7 @@ a:link {
     text-decoration: none;
  }
  a:visited {
-    color: #F2542D;
+    color: #48519b;
  }
   a:hover {
     color: #23aeae;
@@ -38,18 +38,11 @@ h1{
 
 p{
 	font-family: "Syne_Mono", monospace, Arial;
-    text-align: center;
 }
 
 body{
-    background-attachment: fixed;  
-}
-
-.entry-text{
-    padding-top: 50px;
-    padding-right: 80px;
-    padding-bottom: 50px;
-    padding-left: 80px;
+    background-attachment: fixed;
+    margin: 0;
 }
 
 li{
@@ -94,8 +87,8 @@ li{
 
 .stamp{
     position: fixed;
-    bottom: 25px;
-    left: 25px;
+    bottom: 10px;
+    left: 10px;
     height: 100px;
     width: 80px;
     transition: .3s;
@@ -173,4 +166,15 @@ li{
     -ms-transform: scale(1.5); /* IE 9 */
     -webkit-transform: scale(1.5); /* Safari 3-8 */
     transform: scale(1.5);
+}
+
+.banner {
+    width: 37.5%;
+    height: 100vh;
+    background: url('placeholder.png') no-repeat center center;
+    background-size: cover;
+}
+.content {
+    flex-grow: 1;
+    padding: 20px;
 }
