@@ -2,12 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-@media (max-width: 576px) {
-    .navigation {
-      display: none;
-    }
-}
-
 @font-face {
     font-family: "Syne_Mono";
     src: url(Syne_Mono/SyneMono-Regular.ttf) format("truetype");
@@ -15,33 +9,25 @@ html {
     src:url(RubikDirt/RubikDirt-Regular.ttf) format("truetype");
 }
 
-a:link {
-    color: #127475;
-    text-decoration: none;
- }
- a:visited {
-    color: #48519b;
- }
-  a:hover {
-    color: #23aeae;
-    text-decoration: underline;
-}
-
-/*all text will be in css containers*/
 h1{
     font-family: "RubikDirt", monospace, Arial;
-    font-size: 48px;
+    font-size: 24px;
 	text-align: left;
     padding: 50px;
     padding-left: 7.5%;
+    opacity: 85%;
 }
 
 p{
 	font-family: "Syne_Mono", monospace, Arial;
+    line-height: 2em;
 }
 
 body{
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url('img/paper-bg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -53,9 +39,11 @@ li{
     font-family: "Syne_Mono", monospace, Arial;
     padding: 20px;
     list-style-type: square;
+    line-height: 2em;
 }
 
 /* -------------------------------------altered code snippet from ribo.zone------------------------------------- */
+/* change this code to match nav buttons + design img (postcard)*/
 .entry-button {
     width: fit-content;
     height: fit-content;
@@ -107,7 +95,7 @@ li{
 .nav1{
     position: fixed;
     top: 50px;
-    right: 50px;
+    right: 200px;
     height: 100px;
     width: 100px;
     transition: transform .3s;
@@ -124,7 +112,7 @@ li{
 /*SECOND BUTTON*/
 .nav2{
     position: fixed;
-    top: 220px;
+    top: 50px;
     right: 50px;
     height: 100px;
     width: 100px;
@@ -141,8 +129,8 @@ li{
 /*THIRD BUTTON*/
 .nav3{
     position: fixed;
-    top: 390px;
-    right: 50px;
+    top: 200px;
+    right: 200px;
     height: 100px;
     width: 100px;
     transition: transform .3s;
@@ -158,7 +146,7 @@ li{
 /*FOURTH BUTTON*/
 .nav4{
     position: fixed;
-    top: 560px;
+    top: 200px;
     right: 50px;
     height: 100px;
     width: 100px;
@@ -172,6 +160,80 @@ li{
     transform: scale(1.5);
 }
 
+/*FIFTH BUTTON*/
+.nav5{
+    position: fixed;
+    top: 350px;
+    right: 200px;
+    height: 100px;
+    width: 100px;
+    transition: transform .3s;
+
+}
+
+.nav5:hover {
+    filter: saturate(150%);
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+}
+
+/*SIXTH BUTTON*/
+.nav6{
+    position: fixed;
+    top: 350px;
+    right: 50px;
+    height: 100px;
+    width: 100px;
+    transition: transform .3s;
+}
+
+.nav6:hover {
+    filter: saturate(150%);
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+}
+
+/*SEVENTH BUTTON*/
+.nav7{
+    position: fixed;
+    top: 500px;
+    right: 200px;
+    height: 100px;
+    width: 100px;
+    transition: transform .3s;
+}
+
+.nav7:hover {
+    filter: saturate(150%);
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+}
+
+/*EIGHTH BUTTON*/
+.nav8{
+    position: fixed;
+    top: 500px;
+    right: 50px;
+    height: 100px;
+    width: 100px;
+    transition: transform .3s;
+}
+
+.nav8:hover {
+    filter: saturate(150%);
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+}
+
+.container {
+    display: flex;
+    width: 90%;
+}
+
 .banner {
     width: 37.5%;
     height: 100vh;
@@ -179,6 +241,44 @@ li{
     background-size: cover;
 }
 .content {
+    overflow: auto;
     flex-grow: 1;
     padding: 20px;
+}
+
+.left{
+    flex-grow: 1;
+    padding: 10px;
+    width: 90px;
+    height: 100vh;
+    position: fixed;
+    left: 0%;
+}
+
+.paragraphs{
+    overflow: auto;
+    flex-grow: 3;
+    padding: 15px;
+    width: 55%;
+    position: absolute;
+    left: auto;
+
+}
+
+.navigation{
+    overflow: visible;
+    flex-grow: 1.5;
+}
+
+@media (max-width: 650px) {
+    .navigation {
+      display: none;
+    }
+    .banner {
+        display: none;
+    }
+
+    .paragraphs{
+        width: 90%;
+    }
 }
