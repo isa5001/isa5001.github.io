@@ -3,10 +3,13 @@ html {
 }
 
 @font-face {
-    font-family: "Syne_Mono";
-    src: url(Syne_Mono/SyneMono-Regular.ttf) format("truetype");
     font-family: "RubikDirt";
     src:url(RubikDirt/RubikDirt-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Syne_Mono";
+    src:url(Syne_Mono/SyneMono-Regular.ttf) format("truetype");
 }
 
 header{
@@ -106,42 +109,58 @@ li{
     cursor: help;
 }
 
-/*FIRST BUTTON*/
-.nav1{
-    position: fixed;
-    top: 50px;
-    right: 160px;
-    height: 100px;
-    width: 100px;
-    transition: transform .3s;
-
+.navigation-odd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px; /* Adjust spacing between images */
+    width: 60px; /* Adjust width as needed */
+    padding: 5px;
+    margin: 40px;
+    margin-left: 10px;
 }
 
-.nav1:hover {
+.navigation-odd img {
+    width: 90px; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s;
+}
+
+.navigation-odd img:hover {
     filter: saturate(150%);
-    -ms-transform: scale(1.25); /* IE 9 */
-    -webkit-transform: scale(1.25); /* Safari 3-8 */
+    -ms-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
     transform: scale(1.25);
+    cursor: pointer;
 }
 
-/*SECOND BUTTON*/
-.nav2{
-    position: fixed;
-    top: 50px;
-    right: 30px;
-    height: 100px;
-    width: 100px;
-    transition: transform .3s;
+.navigation-even{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 60px;
+    padding: 5px;
+    margin: 40px;
+    margin-left: 10px;
 }
 
-.nav2:hover {
+.navigation-even img {
+    width: 90px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.navigation-even img:hover {
     filter: saturate(150%);
-    -ms-transform: scale(1.25); /* IE 9 */
-    -webkit-transform: scale(1.25); /* Safari 3-8 */
+    -ms-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
     transform: scale(1.25);
+    cursor: pointer;
 }
-
-/*THIRD BUTTON*/
+/*
 .nav3{
     position: fixed;
     top: 200px;
@@ -150,99 +169,7 @@ li{
     width: 100px;
     transition: transform .3s;
 }
-
-.nav3:hover {
-    filter: saturate(150%);
-    -ms-transform: scale(1.25); /* IE 9 */
-    -webkit-transform: scale(1.25); /* Safari 3-8 */
-    transform: scale(1.25);
-}
-
-/*FOURTH BUTTON*/
-.nav4{
-    position: fixed;
-    top: 200px;
-    right: 30px;
-    height: 100px;
-    width: 100px;
-    transition: transform .3s;
-}
-
-.nav4:hover {
-    filter: saturate(150%);
-    -ms-transform: scale(1.25); /* IE 9 */
-    -webkit-transform: scale(1.25); /* Safari 3-8 */
-    transform: scale(1.25);
-}
-
-/*FIFTH BUTTON*/
-.nav5{
-    position: fixed;
-    top: 350px;
-    right: 160px;
-    height: 100px;
-    width: 100px;
-    transition: transform .3s;
-
-}
-
-.nav5:hover {
-    filter: saturate(150%);
-    -ms-transform: scale(1.25); /* IE 9 */
-    -webkit-transform: scale(1.25); /* Safari 3-8 */
-    transform: scale(1.25);
-}
-
-/*SIXTH BUTTON*/
-.nav6{
-    position: fixed;
-    top: 350px;
-    right: 30px;
-    height: 100px;
-    width: 100px;
-    transition: transform .3s;
-}
-
-.nav6:hover {
-    filter: saturate(150%);
-    -ms-transform: scale(1.25); /* IE 9 */
-    -webkit-transform: scale(1.25); /* Safari 3-8 */
-    transform: scale(1.25);
-}
-
-/*SEVENTH BUTTON*/
-.nav7{
-    position: fixed;
-    top: 500px;
-    right: 160px;
-    height: 100px;
-    width: 100px;
-    transition: transform .3s;
-}
-
-.nav7:hover {
-    filter: saturate(150%);
-    -ms-transform: scale(1.25); /* IE 9 */
-    -webkit-transform: scale(1.25); /* Safari 3-8 */
-    transform: scale(1.25);
-}
-
-/*EIGHTH BUTTON*/
-.nav8{
-    position: fixed;
-    top: 500px;
-    right: 30px;
-    height: 100px;
-    width: 100px;
-    transition: transform .3s;
-}
-
-.nav8:hover {
-    filter: saturate(150%);
-    -ms-transform: scale(1.25); /* IE 9 */
-    -webkit-transform: scale(1.25); /* Safari 3-8 */
-    transform: scale(1.25);
-}
+*/
 
 .banner {
     width: 37.5%;
@@ -264,28 +191,36 @@ li{
 .left{
     position: relative;
     width: 90px;
-    height: 100%;
+    height: 100vh;
     left: 0;
 }
 
-.paragraphs{
+.center{
     overflow: auto;
     position: relative;
+    flex-grow: 1;
+    margin-right: 10px;
+    margin-left: 10px;
     padding: 5px;
-    width: 70vw;
+    width: 85vw;
     height: 98vh;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 670px) {
     .entry-button{
         display: none;
     }
     .entry-button-sml{
         display: block;
     }
-    .navigation {
+
+    .navigation-odd {
       display: none;
     }
+    .navigation-even {
+        display: none;
+      }
+
     .banner {
         display: none;
     }
@@ -293,6 +228,5 @@ li{
     .paragraphs{
         overflow: auto;
         width: 90vw;
-        height: 100%;
     }
 }
