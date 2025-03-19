@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    overflow-y: scroll;
 }
 
 @font-face {
@@ -9,11 +10,26 @@ html {
     src:url(RubikDirt/RubikDirt-Regular.ttf) format("truetype");
 }
 
+header{
+    font-family: "RubikDirt", monospace, Arial;
+    font-size: 48px;
+    text-align: center;
+    padding: 30px;
+}
 h1{
     font-family: "RubikDirt", monospace, Arial;
+    font-size: 36px;
+	text-align: left;
+    padding: 25px;
+    padding-left: 7.5%;
+    opacity: 85%;
+}
+
+h2{
+	font-family: "Syne_Mono", monospace, Arial;
     font-size: 24px;
 	text-align: left;
-    padding: 50px;
+    padding: 15px;
     padding-left: 7.5%;
     opacity: 85%;
 }
@@ -25,9 +41,6 @@ p{
 
 body{
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-image: url('img/paper-bg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -54,21 +67,16 @@ li{
     transform: translate(-50%, -50%);
   }
 
-  .entry-button span {
-    opacity: 0;
+  .entry-button-sml {
+    width: fit-content;
+    height: fit-content;
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 99;
-    font-family: "RubikDirt", monospace, Arial;
-    font-size: 64px;
-    color: rgba(171, 28, 28, 0.8);
   }
 
-  .entry-button:hover span, .entry-button:focus span {
-    opacity: 1;
-  }
   .entry-button:hover img, .entry-button:focus img {
     -ms-transform: scale(1.05); /* IE 9 */
     -webkit-transform: scale(1.05); /* Safari 3-8 */
@@ -76,6 +84,14 @@ li{
     transition: transform .3s;
 }
 /* --------------------------------------------------------------------------------------------------------- */
+.textbox{
+    position: absolute;
+    display: block;
+    text-align: center;
+    padding: 5px;
+    left: 50%;
+    transform: translate(-50%);
+}
 
 .stamp{
     position: fixed;
@@ -95,7 +111,7 @@ li{
 .nav1{
     position: fixed;
     top: 50px;
-    right: 200px;
+    right: 160px;
     height: 100px;
     width: 100px;
     transition: transform .3s;
@@ -104,16 +120,16 @@ li{
 
 .nav1:hover {
     filter: saturate(150%);
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5);
+    -ms-transform: scale(1.25); /* IE 9 */
+    -webkit-transform: scale(1.25); /* Safari 3-8 */
+    transform: scale(1.25);
 }
 
 /*SECOND BUTTON*/
 .nav2{
     position: fixed;
     top: 50px;
-    right: 50px;
+    right: 30px;
     height: 100px;
     width: 100px;
     transition: transform .3s;
@@ -121,16 +137,16 @@ li{
 
 .nav2:hover {
     filter: saturate(150%);
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5);
+    -ms-transform: scale(1.25); /* IE 9 */
+    -webkit-transform: scale(1.25); /* Safari 3-8 */
+    transform: scale(1.25);
 }
 
 /*THIRD BUTTON*/
 .nav3{
     position: fixed;
     top: 200px;
-    right: 200px;
+    right: 160px;
     height: 100px;
     width: 100px;
     transition: transform .3s;
@@ -138,16 +154,16 @@ li{
 
 .nav3:hover {
     filter: saturate(150%);
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5);
+    -ms-transform: scale(1.25); /* IE 9 */
+    -webkit-transform: scale(1.25); /* Safari 3-8 */
+    transform: scale(1.25);
 }
 
 /*FOURTH BUTTON*/
 .nav4{
     position: fixed;
     top: 200px;
-    right: 50px;
+    right: 30px;
     height: 100px;
     width: 100px;
     transition: transform .3s;
@@ -155,16 +171,16 @@ li{
 
 .nav4:hover {
     filter: saturate(150%);
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5);
+    -ms-transform: scale(1.25); /* IE 9 */
+    -webkit-transform: scale(1.25); /* Safari 3-8 */
+    transform: scale(1.25);
 }
 
 /*FIFTH BUTTON*/
 .nav5{
     position: fixed;
     top: 350px;
-    right: 200px;
+    right: 160px;
     height: 100px;
     width: 100px;
     transition: transform .3s;
@@ -173,16 +189,16 @@ li{
 
 .nav5:hover {
     filter: saturate(150%);
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5);
+    -ms-transform: scale(1.25); /* IE 9 */
+    -webkit-transform: scale(1.25); /* Safari 3-8 */
+    transform: scale(1.25);
 }
 
 /*SIXTH BUTTON*/
 .nav6{
     position: fixed;
     top: 350px;
-    right: 50px;
+    right: 30px;
     height: 100px;
     width: 100px;
     transition: transform .3s;
@@ -190,16 +206,16 @@ li{
 
 .nav6:hover {
     filter: saturate(150%);
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5);
+    -ms-transform: scale(1.25); /* IE 9 */
+    -webkit-transform: scale(1.25); /* Safari 3-8 */
+    transform: scale(1.25);
 }
 
 /*SEVENTH BUTTON*/
 .nav7{
     position: fixed;
     top: 500px;
-    right: 200px;
+    right: 160px;
     height: 100px;
     width: 100px;
     transition: transform .3s;
@@ -207,16 +223,16 @@ li{
 
 .nav7:hover {
     filter: saturate(150%);
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5);
+    -ms-transform: scale(1.25); /* IE 9 */
+    -webkit-transform: scale(1.25); /* Safari 3-8 */
+    transform: scale(1.25);
 }
 
 /*EIGHTH BUTTON*/
 .nav8{
     position: fixed;
     top: 500px;
-    right: 50px;
+    right: 30px;
     height: 100px;
     width: 100px;
     transition: transform .3s;
@@ -224,14 +240,9 @@ li{
 
 .nav8:hover {
     filter: saturate(150%);
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5);
-}
-
-.container {
-    display: flex;
-    width: 90%;
+    -ms-transform: scale(1.25); /* IE 9 */
+    -webkit-transform: scale(1.25); /* Safari 3-8 */
+    transform: scale(1.25);
 }
 
 .banner {
@@ -246,31 +257,33 @@ li{
     padding: 20px;
 }
 
+.container {
+    display: flex;
+    width: 100vw;
+}
+
 .left{
-    flex-grow: 1;
-    padding: 10px;
+    position: relative;
     width: 90px;
-    height: 100vh;
-    position: fixed;
-    left: 0%;
+    height: 100%;
+    left: 0;
 }
 
 .paragraphs{
     overflow: auto;
-    flex-grow: 3;
-    padding: 15px;
-    width: 55%;
-    position: absolute;
-    left: auto;
-
-}
-
-.navigation{
-    overflow: visible;
-    flex-grow: 1.5;
+    position: relative;
+    padding: 5px;
+    width: 70vw;
+    height: 98vh;
 }
 
 @media (max-width: 650px) {
+    .entry-button{
+        display: none;
+    }
+    .entry-button-sml{
+        display: block;
+    }
     .navigation {
       display: none;
     }
@@ -279,6 +292,8 @@ li{
     }
 
     .paragraphs{
-        width: 90%;
+        overflow: auto;
+        width: 90vw;
+        height: 100%;
     }
 }
