@@ -18,16 +18,23 @@ header{
     text-align: center;
     padding: 30px;
 }
-h1{
+
+h1, h2{
     font-family: "RubikDirt", monospace, Arial;
     font-size: 36px;
-	text-align: left;
     padding: 25px;
-    padding-left: 7.5%;
     opacity: 85%;
 }
-
+h1{
+    text-align: left;
+    padding-left: 7.5%;
+}
 h2{
+    text-align: right;
+    padding-right: 7.5%;
+}
+
+h3{
 	font-family: "Syne_Mono", monospace, Arial;
     font-size: 24px;
 	text-align: left;
@@ -39,6 +46,7 @@ h2{
 p{
 	font-family: "Syne_Mono", monospace, Arial;
     line-height: 2em;
+    padding: 0.5em;
 }
 
 body{
@@ -121,20 +129,6 @@ li{
     margin-left: 20px;
 }
 
-.navigation-odd img {
-    width: 90px; /* Adjust image width */
-    height: auto; /* Maintain aspect ratio */
-    transition: transform 0.3s;
-}
-
-.navigation-odd img:hover {
-    filter: saturate(150%);
-    -ms-transform: scale(1.25);
-    -webkit-transform: scale(1.25);
-    transform: scale(1.25);
-    cursor: pointer;
-}
-
 .navigation-even{
     display: flex;
     flex-direction: column;
@@ -147,29 +141,21 @@ li{
     margin-left: 10px;
 }
 
-.navigation-even img {
-    width: 90px;
+.navigation-odd img, .navigation-even img {
+    width: 95px;
     height: auto;
+    /*box-shadow: 0 4px 8px 0 rgba(123, 88, 51, 0.2), 0 6px 20px 0 rgba(123, 88, 51, 0.2);*/
     transition: transform 0.3s;
 }
 
-.navigation-even img:hover {
+.navigation-odd img:hover, .navigation-even img:hover {
     filter: saturate(150%);
     -ms-transform: scale(1.25);
     -webkit-transform: scale(1.25);
     transform: scale(1.25);
+    rotate: 10deg;
     cursor: pointer;
 }
-/*
-.nav3{
-    position: fixed;
-    top: 200px;
-    right: 160px;
-    height: 100px;
-    width: 100px;
-    transition: transform .3s;
-}
-*/
 
 .banner {
     width: 37.5%;
@@ -204,6 +190,7 @@ li{
     padding: 5px;
     width: 85vw;
     height: 98vh;
+    overflow-y: scroll;
 }
 
 @media (max-width: 670px) {
