@@ -1,15 +1,16 @@
-html {
-    scroll-behavior: smooth;
-}
-
+/*-----------------------------------FONTS-----------------------------------*/
 @font-face {
     font-family: "RubikDirt";
     src:url(RubikDirt/RubikDirt-Regular.ttf) format("truetype");
 }
-
 @font-face {
     font-family: "Syne_Mono";
     src:url(Syne_Mono/SyneMono-Regular.ttf) format("truetype");
+}
+
+/*-----------------------------------GENERAL-----------------------------------*/
+html {
+    scroll-behavior: smooth;
 }
 
 header{
@@ -47,6 +48,8 @@ p{
 	font-family: "Syne_Mono", monospace, Arial;
     line-height: 2em;
     padding: 0.5em;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 body{
@@ -65,9 +68,13 @@ li{
     line-height: 2em;
 }
 
-/* -------------------------------------altered code snippet from ribo.zone------------------------------------- */
-/* change this code to match nav buttons + design img (postcard)*/
-.entry-button {
+img{
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+/*-----------------------------------POSTCARD-----------------------------------*/
+.postcard{
     width: fit-content;
     height: fit-content;
     display: block;
@@ -75,9 +82,8 @@ li{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-
-  .entry-button-sml {
+}
+  .postcard-small{
     width: fit-content;
     height: fit-content;
     display: none;
@@ -86,23 +92,14 @@ li{
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
-  .entry-button:hover img, .entry-button:focus img {
+.postcard:hover img, .postcard-small:hover img {
     -ms-transform: scale(1.05); /* IE 9 */
     -webkit-transform: scale(1.05); /* Safari 3-8 */
     transform: scale(1.05);
     transition: transform .3s;
 }
-/* --------------------------------------------------------------------------------------------------------- */
-.textbox{
-    position: absolute;
-    display: block;
-    text-align: center;
-    padding: 5px;
-    left: 50%;
-    transform: translate(-50%);
-}
 
+/*-----------------------------------STAMP-----------------------------------*/
 .stamp{
     position: fixed;
     bottom: 10px;
@@ -110,13 +107,13 @@ li{
     height: 100px;
     width: 80px;
     transition: .3s;
- }
-
+}
 .stamp:hover{
     rotate: 10deg;
     cursor: help;
 }
 
+/*-----------------------------------NAVIGATION-----------------------------------*/
 .navigation-odd{
     display: flex;
     flex-direction: column;
@@ -128,7 +125,6 @@ li{
     margin: 40px;
     margin-left: 20px;
 }
-
 .navigation-even{
     display: flex;
     flex-direction: column;
@@ -140,16 +136,14 @@ li{
     margin: 40px;
     margin-left: 10px;
 }
-
 .navigation-odd img, .navigation-even img {
     width: 95px;
     height: auto;
-    /*box-shadow: 0 4px 8px 0 rgba(123, 88, 51, 0.2), 0 6px 20px 0 rgba(123, 88, 51, 0.2);*/
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222); 
     transition: transform 0.3s;
 }
-
 .navigation-odd img:hover, .navigation-even img:hover {
-    filter: saturate(150%);
     -ms-transform: scale(1.25);
     -webkit-transform: scale(1.25);
     transform: scale(1.25);
@@ -157,6 +151,7 @@ li{
     cursor: pointer;
 }
 
+/*-----------------------------------aaaa-----------------------------------*/
 .banner {
     width: 37.5%;
     height: 100vh;
@@ -169,18 +164,17 @@ li{
     padding: 20px;
 }
 
+/*-----------------------------------MAIN-----------------------------------*/
 .container {
     display: flex;
     width: 100vw;
 }
-
 .left{
     position: relative;
     width: 90px;
     height: 100vh;
     left: 0;
 }
-
 .center{
     overflow: auto;
     position: relative;
@@ -193,11 +187,12 @@ li{
     overflow-y: scroll;
 }
 
+/*-----------------------------------VIEW-----------------------------------*/
 @media (max-width: 670px) {
-    .entry-button{
+    .postcard{
         display: none;
     }
-    .entry-button-sml{
+    .postcard-small{
         display: block;
     }
 
@@ -206,7 +201,7 @@ li{
     }
     .navigation-even {
         display: none;
-      }
+    }
 
     .banner {
         display: none;
