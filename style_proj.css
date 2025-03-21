@@ -64,8 +64,8 @@ body{
 li{
     font-family: "Syne_Mono", monospace, Arial;
     padding: 20px;
-    list-style-type: square;
-    line-height: 2em;
+    list-style-type: circle;
+    line-height: 1em;
 }
 
 img{
