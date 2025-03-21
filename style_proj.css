@@ -23,7 +23,7 @@ header{
 h1, h2{
     font-family: "RubikDirt", monospace, Arial;
     font-size: 36px;
-    padding: 25px;
+    padding: 15px;
     opacity: 85%;
 }
 h1{
@@ -69,8 +69,8 @@ li{
 }
 
 img{
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
+    -webkit-filter: drop-shadow(3px 3px 3px #222);
+    filter: drop-shadow(3px 3px 3px #222);
 }
 
 /*-----------------------------------POSTCARD-----------------------------------*/
@@ -151,19 +151,6 @@ img{
     cursor: pointer;
 }
 
-/*-----------------------------------aaaa-----------------------------------*/
-.banner {
-    width: 37.5%;
-    height: 100vh;
-    background: url('placeholder.png') no-repeat center center;
-    background-size: cover;
-}
-.content {
-    overflow: auto;
-    flex-grow: 1;
-    padding: 20px;
-}
-
 /*-----------------------------------MAIN-----------------------------------*/
 .container {
     display: flex;
@@ -187,8 +174,46 @@ img{
     overflow-y: scroll;
 }
 
+/*-----------------------------------PHOTOS-----------------------------------*/
+.gallery-odd, .gallery-even {
+    margin: 15px;
+    width: 180px;
+}
+.gallery-odd{
+    float: right;
+    margin-right: 2%;
+}
+.gallery-even{
+    float: left;
+    margin-left: 2%;
+}
+.gallery-odd img, .gallery-even img {
+    width: 100%;
+    height: auto;
+}
+.desc {
+    font-family: "Syne_Mono", monospace, Arial;
+    font-size: 14px;
+    padding: 0.5em;
+    text-align: center;
+    
+}
+
+/*-----------------------------------AAA-----------------------------------*/
+.banner {
+    width: 37.5%;
+    height: 100vh;
+    background: url('placeholder.png') no-repeat center center;
+    background-size: cover;
+}
+.content {
+    overflow: auto;
+    flex-grow: 1;
+    padding: 20px;
+}
+
 /*-----------------------------------VIEW-----------------------------------*/
-@media (max-width: 670px) {
+@media (max-width: 720px) {
     .postcard{
         display: none;
     }
