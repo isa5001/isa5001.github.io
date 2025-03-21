@@ -71,10 +71,17 @@ li{
 img{
     -webkit-filter: drop-shadow(3px 3px 3px #222);
     filter: drop-shadow(3px 3px 3px #222);
+    transition: transform 0.3s;
+}
+img:hover{
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: transform .3s;
 }
 
-/*-----------------------------------POSTCARD-----------------------------------*/
-.postcard{
+/*-----------------------------------ENTRY-----------------------------------*/
+.entry-ticket{
     width: fit-content;
     height: fit-content;
     display: block;
@@ -83,7 +90,7 @@ img{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-  .postcard-small{
+  .entry-ticket-small{
     width: fit-content;
     height: fit-content;
     display: none;
@@ -92,13 +99,6 @@ img{
     left: 50%;
     transform: translate(-50%, -50%);
   }
-.postcard:hover img, .postcard-small:hover img {
-    -ms-transform: scale(1.05); /* IE 9 */
-    -webkit-transform: scale(1.05); /* Safari 3-8 */
-    transform: scale(1.05);
-    transition: transform .3s;
-}
-
 /*-----------------------------------STAMP-----------------------------------*/
 .stamp{
     position: fixed;
@@ -111,6 +111,7 @@ img{
 .stamp:hover{
     rotate: 10deg;
     cursor: help;
+    transform: scale(1);
 }
 
 /*-----------------------------------NAVIGATION-----------------------------------*/
@@ -141,12 +142,8 @@ img{
     height: auto;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222); 
-    transition: transform 0.3s;
 }
 .navigation-odd img:hover, .navigation-even img:hover {
-    -ms-transform: scale(1.25);
-    -webkit-transform: scale(1.25);
-    transform: scale(1.25);
     rotate: 10deg;
     cursor: pointer;
 }
@@ -214,10 +211,10 @@ img{
 
 /*-----------------------------------VIEW-----------------------------------*/
 @media (max-width: 720px) {
-    .postcard{
+    .entry-ticket{
         display: none;
     }
-    .postcard-small{
+    .entry-ticket-small{
         display: block;
     }
 
@@ -230,10 +227,5 @@ img{
 
     .banner {
         display: none;
-    }
-
-    .paragraphs{
-        overflow: auto;
-        width: 90vw;
     }
 }
