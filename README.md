@@ -25,7 +25,10 @@ I only got into coding recently, so apologies for the <i>very</i> basic/messy co
 </pre>
 <b>Things to do:</b>
 <ul>
-  <li>fix directory and buttons</li>
-  <li>add css containers for text</li>
-  <li>add backgrounds</li>
-  <li>code html + css for additional images</li>
+  <li>add a different background for index</li>
+  <li>add image galleries</li>
+  <li>replace placeholder text</li>
+  <li>replace placeholder images</li>
+  <li>add more misc. objects</li>
+  <li>neaten code</li>
+  <li>make private/require code</li>
