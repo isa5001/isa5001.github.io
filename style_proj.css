@@ -9,7 +9,8 @@
 }
 
 /*-----------------------------------GENERAL-----------------------------------*/
-html {
+* { 
+    scrollbar-color: #b38f72 #eed9c898; 
     scroll-behavior: smooth;
 }
 
@@ -24,12 +25,14 @@ h1, h2{
     font-family: "RubikDirt", monospace, Arial;
     font-size: 36px;
     padding: 15px;
-    opacity: 85%;
+    color: #31261d;
 }
+
 h1{
     text-align: left;
     padding-left: 7.5%;
 }
+
 h2{
     text-align: right;
     padding-right: 7.5%;
@@ -41,7 +44,7 @@ h3{
 	text-align: left;
     padding: 15px;
     padding-left: 7.5%;
-    opacity: 85%;
+    color: #1a140f;
 }
 
 p{
@@ -50,6 +53,7 @@ p{
     padding: 0.5em;
     padding-left: 5%;
     padding-right: 5%;
+    color: #1a140f;
 }
 
 body{
@@ -66,11 +70,12 @@ li{
     padding: 20px;
     list-style-type: circle;
     line-height: 1em;
+    color: #1a140f;
 }
 
 img{
-    -webkit-filter: drop-shadow(3px 3px 3px #222);
-    filter: drop-shadow(3px 3px 3px #222);
+    -webkit-filter: drop-shadow(3px 3px 3px #1a140f75);
+    filter: drop-shadow(3px 3px 3px #1a140f75);
     transition: transform 0.3s;
 }
 img:hover{
@@ -140,8 +145,6 @@ img:hover{
 .navigation-odd img, .navigation-even img {
     width: 95px;
     height: auto;
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222); 
 }
 .navigation-odd img:hover, .navigation-even img:hover {
     rotate: 10deg;
@@ -168,6 +171,7 @@ img:hover{
     padding: 5px;
     width: 85vw;
     height: 98vh;
+    overflow-x: hidden;
     overflow-y: scroll;
 }
 
