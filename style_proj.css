@@ -153,6 +153,8 @@ img:hover{
 
 /*-----------------------------------MAIN-----------------------------------*/
 .container {
+    background-image: url('img/TESTING.png');
+    background-repeat: repeat;
     display: flex;
     width: 100vw;
 }
