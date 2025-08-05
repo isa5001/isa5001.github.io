@@ -182,11 +182,11 @@ img:hover{
     margin: 15px;
     width: 180px;
 }
-.gallery-odd{
+.gallery-odd {
     float: right;
     margin-right: 2%;
 }
-.gallery-even{
+.gallery-even {
     float: left;
     margin-left: 2%;
 }
